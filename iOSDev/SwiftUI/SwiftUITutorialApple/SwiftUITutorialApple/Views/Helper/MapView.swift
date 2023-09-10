@@ -1,6 +1,6 @@
 //
 //  MapView.swift
-//  Test
+//  SwiftUITutorialApple
 //
 //  Created by Amar Gawade on 9/9/23.
 //

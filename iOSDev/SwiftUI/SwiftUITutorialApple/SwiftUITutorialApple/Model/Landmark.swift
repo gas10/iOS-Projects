@@ -1,6 +1,6 @@
 //
 //  Landmark.swift
-//  Test
+//  SwiftUITutorialApple
 //
 //  Created by Amar Gawade on 9/9/23.
 //
@@ -34,5 +34,15 @@ struct Landmark: Hashable, Codable, Identifiable {
         var latitude: Double
         var longitude: Double
     }
+    
+    var category: Category
+    enum Category: String, CaseIterable, Codable {
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
+    
+    var isFeatured: Bool
+
 }
 
