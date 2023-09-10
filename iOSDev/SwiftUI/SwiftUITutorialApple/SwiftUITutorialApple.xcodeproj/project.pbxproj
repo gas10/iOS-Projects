@@ -14,9 +14,9 @@
 		622D08CC2AADEBD80079BDA4 /* SwiftUITutorialAppleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622D08CB2AADEBD80079BDA4 /* SwiftUITutorialAppleTests.swift */; };
 		622D08D62AADEBD80079BDA4 /* SwiftUITutorialAppleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622D08D52AADEBD80079BDA4 /* SwiftUITutorialAppleUITests.swift */; };
 		622D08D82AADEBD80079BDA4 /* SwiftUITutorialAppleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622D08D72AADEBD80079BDA4 /* SwiftUITutorialAppleUITestsLaunchTests.swift */; };
-		627F59E92AADEFB4008CA7EF /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 627F59E62AADEFB3008CA7EF /* Model */; };
-		627F59EA2AADEFB4008CA7EF /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 627F59E72AADEFB4008CA7EF /* Views */; };
-		627F59EB2AADEFB4008CA7EF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 627F59E82AADEFB4008CA7EF /* Resources */; };
+		627F59EF2AADF23E008CA7EF /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 627F59EC2AADF23E008CA7EF /* Model */; };
+		627F59F02AADF23E008CA7EF /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 627F59ED2AADF23E008CA7EF /* Views */; };
+		627F59F12AADF23E008CA7EF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 627F59EE2AADF23E008CA7EF /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		622D08D12AADEBD80079BDA4 /* SwiftUITutorialAppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITutorialAppleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		622D08D52AADEBD80079BDA4 /* SwiftUITutorialAppleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialAppleUITests.swift; sourceTree = "<group>"; };
 		622D08D72AADEBD80079BDA4 /* SwiftUITutorialAppleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialAppleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		627F59E62AADEFB3008CA7EF /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
-		627F59E72AADEFB4008CA7EF /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
-		627F59E82AADEFB4008CA7EF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		627F59EC2AADF23E008CA7EF /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		627F59ED2AADF23E008CA7EF /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		627F59EE2AADF23E008CA7EF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +100,9 @@
 		622D08B92AADEBD60079BDA4 /* SwiftUITutorialApple */ = {
 			isa = PBXGroup;
 			children = (
-				627F59E62AADEFB3008CA7EF /* Model */,
-				627F59E82AADEFB4008CA7EF /* Resources */,
-				627F59E72AADEFB4008CA7EF /* Views */,
+				627F59EC2AADF23E008CA7EF /* Model */,
+				627F59EE2AADF23E008CA7EF /* Resources */,
+				627F59ED2AADF23E008CA7EF /* Views */,
 				622D08BA2AADEBD60079BDA4 /* SwiftUITutorialAppleApp.swift */,
 				622D08BC2AADEBD60079BDA4 /* ContentView.swift */,
 				622D08BE2AADEBD80079BDA4 /* Assets.xcassets */,
@@ -240,11 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627F59E92AADEFB4008CA7EF /* Model in Resources */,
+				627F59EF2AADF23E008CA7EF /* Model in Resources */,
 				622D08C22AADEBD80079BDA4 /* Preview Assets.xcassets in Resources */,
 				622D08BF2AADEBD80079BDA4 /* Assets.xcassets in Resources */,
-				627F59EA2AADEFB4008CA7EF /* Views in Resources */,
-				627F59EB2AADEFB4008CA7EF /* Resources in Resources */,
+				627F59F02AADF23E008CA7EF /* Views in Resources */,
+				627F59F12AADF23E008CA7EF /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
