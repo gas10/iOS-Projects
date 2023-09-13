@@ -21,12 +21,14 @@ struct ContentView: View {
             CategoryHome()
                 .tabItem {
                     Label("Featured", systemImage: "star")
+                        .accessibilityIdentifier(AppAccessibilityIdentifiers.featuredLandscapeLabel)
                 }
                 .tag(Tab.featured)
 
             LandmarkList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
+                        .accessibilityIdentifier(AppAccessibilityIdentifiers.showLandscapeListLabel)
                 }
                 .tag(Tab.list)
         }

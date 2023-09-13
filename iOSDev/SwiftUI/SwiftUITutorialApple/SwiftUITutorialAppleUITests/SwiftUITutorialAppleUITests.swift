@@ -7,27 +7,45 @@
 
 import XCTest
 
-class SwiftUITutorialAppleUITests: XCTestCase {
+class SwiftUITutorialAppleUITests: LandscapeXCTestCase {
+    var testExecutor: Page!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    override func setUp() {
+        super.setUp()
+        testExecutor = TestBuilder(app)
+            .resetApplication()
+            .setDeviceLocale()
+            .setServerEnvironment(configLink: "")
+            .launch()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLandscapeEndToEndWorkflow() throws {
+        let turtleRockTitle = "Turtle Rock"
+        testExecutor.on(page: LandmarkHomePage.self)
+            .openTab(option: .landcapeList)
+        
+        testExecutor.on(page: LandmarkListPage.self)
+            .toggleFavorite(isSelected: true)
+        
+        testExecutor.on(page: LandmarkListPage.self)
+            .selectLandscape(title: turtleRockTitle)
+        
+        testExecutor.on(page: LandmarkDetailsPage.self)
+            .verifyFavorite(isFavorite: true)
+            .markFavorite(isFavorite: false)
+            .verifyStaticText(text: "Joshua Tree National Park")
+            .verifyStaticText(text: "California")
+            .tapNavigationBar(titel: turtleRockTitle, buttonLabel: "Landmarks")
+        
+        testExecutor.on(page: LandmarkListPage.self)
+            .toggleFavorite(isSelected: false)
+            .verifyFavorite(isFavorite: false)
+            .selectLandscape(title: turtleRockTitle)
+        
+        testExecutor.on(page: LandmarkDetailsPage.self)
+            .verifyFavorite(isFavorite: false)
+            .markFavorite(isFavorite: true)
+        
     }
 
     func testLaunchPerformance() throws {

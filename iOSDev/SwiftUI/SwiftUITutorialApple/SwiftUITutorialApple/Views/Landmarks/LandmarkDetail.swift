@@ -29,6 +29,9 @@ struct LandmarkDetail: View {
                     Text(landmark.name)
                         .font(.title)
                     FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                        .accessibilityIdentifier($modelData.landmarks[landmarkIndex].isFavorite.wrappedValue ?
+                                                 AppAccessibilityIdentifiers.landmarkDetailsFavoriteButton :
+                                                    AppAccessibilityIdentifiers.landmarkDetailsNotFavoriteButton)
                 }
 
                 HStack {
