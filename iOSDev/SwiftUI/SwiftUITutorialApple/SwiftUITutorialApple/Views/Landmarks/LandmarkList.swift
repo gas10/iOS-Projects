@@ -24,6 +24,7 @@ struct LandmarkList: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
+                    .accessibilityIdentifier(AppAccessibilityIdentifiers.landmarkListFavoriteSwitch)
                 
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
