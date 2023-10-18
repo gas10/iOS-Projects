@@ -17,9 +17,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "622D08D02AADEBD80079BDA4"
-               BuildableName = "SwiftUITutorialAppleUITests.xctest"
-               BlueprintName = "SwiftUITutorialAppleUITests"
+               BlueprintIdentifier = "622D08C62AADEBD80079BDA4"
+               BuildableName = "SwiftUITutorialAppleTests.xctest"
+               BlueprintName = "SwiftUITutorialAppleTests"
                ReferencedContainer = "container:SwiftUITutorialApple.xcodeproj">
             </BuildableReference>
          </TestableReference>
