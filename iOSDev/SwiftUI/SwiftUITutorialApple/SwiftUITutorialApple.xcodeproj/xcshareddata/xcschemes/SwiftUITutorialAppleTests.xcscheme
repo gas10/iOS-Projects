@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1500"
-   version = "2.2">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "NO">
-            <AutocreatedTestPlanReference>
-            </AutocreatedTestPlanReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -28,9 +17,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "622D08D02AADEBD80079BDA4"
-               BuildableName = "SwiftUITutorialAppleUITests.xctest"
-               BlueprintName = "SwiftUITutorialAppleUITests"
+               BlueprintIdentifier = "622D08C62AADEBD80079BDA4"
+               BuildableName = "SwiftUITutorialAppleTests.xctest"
+               BlueprintName = "SwiftUITutorialAppleTests"
                ReferencedContainer = "container:SwiftUITutorialApple.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -48,26 +37,17 @@
       allowLocationSimulation = "YES">
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622D08D02AADEBD80079BDA4"
-            BuildableName = "SwiftUITutorialAppleUITests.xctest"
-            BlueprintName = "SwiftUITutorialAppleUITests"
-            ReferencedContainer = "container:SwiftUITutorialApple.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
